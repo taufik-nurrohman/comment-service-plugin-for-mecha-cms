@@ -6,7 +6,7 @@ foreach(glob(__DIR__ . DS . '*', GLOB_ONLYDIR) as $option) {
     $options[$option] = isset($speak->plugin_comment_service->title->{$option}) ? $speak->plugin_comment_service->title->{$option} : Text::parse($option, '->title');
 }
 
-$options['false'] => '&ndash; ' . $speak->disable . ' &ndash;';
+$options['false'] = '&ndash; ' . $speak->disable . ' &ndash;';
 
 return array(
     'comment_service' => array(
