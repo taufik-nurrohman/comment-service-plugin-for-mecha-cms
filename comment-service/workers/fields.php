@@ -1,19 +1,22 @@
 <?php
 
-$options = array();
+$comment_service_config = File::open(File::D(__DIR__) . DS . 'states' . DS . 'config.txt')->unserialize();
 foreach(glob(__DIR__ . DS . '*', GLOB_ONLYDIR) as $option) {
     $option = File::B($option);
-    $options[$option] = isset($speak->plugin_comment_service->title->{$option}) ? $speak->plugin_comment_service->title->{$option} : Text::parse($option, '->title');
+    $text = isset($speak->plugin_comment_service->title->{$option}) ? $speak->plugin_comment_service->title->{$option} : Text::parse($option, '->title');
+    if($comment_service_config['service'] === $option) {
+        $text .= ' &#10004;';
+    }
+    $options[$speak->plugin_comment_service_title][$option] = $text;
 }
 
-$options['false'] = '&ndash; ' . $speak->disable . ' &ndash;';
+$options[$speak->deactivate][0] = $speak->deactivate;
 
 return array(
     'comment_service' => array(
-        'title' => 'Comment Service',
+        'title' => $speak->plugin_comment_service_title,
         'type' => 'option',
         'value' => $options,
-        'placeholder' => '&ndash; Inherit &ndash;',
-        'description' => 'Inherit means, the field value will follow the configuration data you define in the plugin manager page.',
+        'placeholder' => '&#10004;'
     )
 );

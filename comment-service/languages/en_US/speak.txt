@@ -3,3 +3,10 @@ plugin_comment_service:
     theme: Theme
     light: Light
     dark: Dark
+    disqus: Disqus Comments
+    facebook: Facebook Comments
+    google: Google+ Comments
+  description:
+    disqus_id: Get your own <strong>Disqus</strong> ID <a href="https://disqus.com/admin/create">here…</a>
+
+plugin_comment_service_title: Comment Service

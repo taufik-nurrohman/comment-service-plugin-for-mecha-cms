@@ -6,3 +6,11 @@ Version: 1.0.0
 ====
 
 > Ganti sistem komentar bawaan dengan layanan komentar dari luar.
+
+Layanan yang tersedia saat ini:
+
+ - [Komentar Disqus](https://disqus.com)
+ - [Komentar Facebook](https://developers.facebook.com/docs/plugins/comments)
+ - [Komentar Google+](https://googleblog.blogspot.co.id/2013/04/bringing-google-comments-to-blogger.html)
+
+<!-- block:donate -->

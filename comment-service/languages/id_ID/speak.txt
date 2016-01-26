@@ -3,3 +3,10 @@ plugin_comment_service:
     theme: Tema
     light: Terang
     dark: Gelap
+    disqus: Komentar Disqus
+    facebook: Komentar Facebook
+    google: Komentar Google+
+  description:
+    disqus_id: Dapatkan ID <strong>Disqus</strong> Anda <a href="https://disqus.com/admin/create">di sini…</a>
+
+plugin_comment_service_title: Layanan Komentar

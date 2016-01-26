@@ -1,1 +1,1 @@
-a:2:{s:7:"service";s:8:"facebook";s:8:"services";a:2:{s:6:"disqus";a:1:{s:2:"id";s:9:"mecha-cms";}s:8:"facebook";a:1:{s:5:"theme";s:5:"light";}}}
+a:2:{s:7:"service";s:8:"facebook";s:8:"services";a:2:{s:6:"disqus";a:1:{s:2:"id";s:0:"";}s:8:"facebook";a:1:{s:5:"theme";s:5:"light";}}}
